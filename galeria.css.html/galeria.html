@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Galeria</title>
+    <style>
+        body{
+            background: rgb(39, 37, 37);
+        }
+
+        .gallery{
+            column-count: 4;
+            column-gap: 0;
+            margin-top: 2%;
+        }
+
+        img{
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            height: 80% ;
+
+            transition: scale 350ms ease, opacity 350ms linear;
+         }
+
+         .gallery:has(img:hover) img:not(:hover){
+            scale: .9;
+            opacity: .6;
+         }
+
+         .title{
+            color: white;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-top: 2%;
+         }
+
+         .rodape{
+           text-align: center;
+           font-size: 16px;
+            color: aliceblue;
+         }
+            
+        
+    </style>
+</head>
+<body>
+
+    <h1 class="title">My Gallery</h1>
+    <section class="gallery">
+        <img src="./imagens/car.jpg" alt="picture car">
+        <img src="./imagens/coffee.jpg" alt="picture coffee">
+        <img src="./imagens/floer.jpg" alt="picture floer">
+        <img src="./imagens/gold.jpg" alt="picture gold">
+        <img src="./imagens/nature.jpg" alt="picture nature">
+        <img src="./imagens/animal.jpg" alt="picture animal">
+        <img src="./imagens/shoes.jpg" alt="picture shoes">
+        <img src="./imagens/tumbler.jpg" alt="picture tumbler">
+        <img src="./imagens/building.jpg" alt="picture building ">
+        <img src="./imagens/car2.jpg" alt="picture car2">
+        <img src="./imagens/floeryellow.jpg" alt="picture floeryellow">
+        <img src="./imagens/goat.jpg" alt="picture goat">
+        <img src="./imagens/house.jpg" alt="picture house">
+        <img src="./imagens/lasvegas.jpg" alt="picture Las Vegas">
+        <img src="./imagens/liberty.jpg" alt="picture Statue of Liberty">
+        <img src="./imagens/pump.jpg" alt="picture gas pump">
+    </section>
+
+    <footer class="rodape">
+        <p> &copy; @Rafaelhp.Sousa</p>
+    </footer>
+</body>
+</html>
